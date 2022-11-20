@@ -1,0 +1,19 @@
+﻿@model List<EmployeeTaskDetail>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "_EmployeeLayout";
+    int count = 0;
+}
+
+<h3>Task Details</h3>
+
+<table>
+    @foreach (var item in Model)
+    {
+        <tr>
+            @item.Description
+            <br />
+        </tr>
+    }
+</table>
+

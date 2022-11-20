@@ -1,0 +1,27 @@
+﻿@model List<AppRole>
+@{
+    ViewData["Title"] = "AddEmployee";
+    Layout = "_CrmLayout";
+}
+
+
+<h1>Role List</h1>
+
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Role Name</th>
+
+    </tr>
+        @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Name</td>
+            <td><a href="/Role/DeleteRole/@item.Id" class="btn btn-danger">Delete</a></td>
+        </tr>
+     }
+    
+</table>
+<a href="/Role/AddRole/" class="btn btn-primary">Click to Add a New Role</a>

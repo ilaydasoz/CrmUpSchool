@@ -1,0 +1,41 @@
+﻿@model List<CrmUpSchool.EntityLayer.Concrete.Employee>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "_CrmLayout";
+ }
+
+<h1>Employee List</h1>
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Employee</th>
+        <th>Department</th>
+        <th>Delete</th>
+        <th>Update</th>
+        <th>Duties</th>
+        <th>Status</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+<tr>
+    <td>@item.EmployeeID</td>
+    <td>@item.EmployeeName @item.EmployeeSurname</td>
+    <td>@item.Category.CategoryName</td>
+    <td><a href="/Employee/DeleteEmployee/@item.EmployeeID" class="btn btn-outline-danger">Delete</a></td>
+    <td><a href="/Employee/UpdateEmployee/@item.EmployeeID" class="btn btn-outline-success">Update</a></td>
+    <td><a href="#" class="btn btn-outline-dark">Duties</a></td>
+
+    @{ if (item.EmployeeStatus == true)
+        {
+<td><a href="/Employee/ChangeStatusToFalse/@item.EmployeeID" class="btn btn-outline-warning">Passive</a></td>
+ }
+else
+{
+<td><a href="/Employee/ChangeStatusToTrue/@item.EmployeeID" class="btn btn-outline-danger">Active</a></td>
+ } }
+</tr>}
+    }
+</table>
+<a href="/EmployeeTask/AddTask/" class="btn btn-primary">New Employee</a>

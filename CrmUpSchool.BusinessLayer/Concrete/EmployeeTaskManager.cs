@@ -1,0 +1,48 @@
+﻿using System;
+using System.Collections.Generic;
+using CrmUpSchool.BusinessLayer.Abstract;
+using CrmUpSchool.DataAccessLayer.Abstract;
+using CrmUpSchool.EntityLayer.Concrete;
+
+namespace CrmUpSchool.BusinessLayer.Concrete
+{
+    public class EmployeeTaskManager : IEmployeeTaskService
+    {
+        IEmployeeTaskDal _employeeTaskDal;
+
+        public void TDelete(EmployeeTask t)
+        {
+            throw new NotImplementedException();
+        }
+
+        public EmployeeTask TGetById(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<EmployeeTask> TGetEmployeeTaskByEmployee()
+        {
+            return _employeeTaskDal.GetEmployeeTaskByEmployee();
+        }
+
+        public List<EmployeeTask> TGetEmployeeTaskById(int id)
+        {
+            return _employeeTaskDal.GetEmployeeTaskById(id);
+        }
+
+        public List<EmployeeTask> TGetList()
+        {
+            return _employeeTaskDal.GetList();
+        }
+
+        public void TInsert(EmployeeTask t)
+        {
+            _employeeTaskDal.Insert(t);
+        }
+
+        public void TUpdate(EmployeeTask t)
+        {
+            throw new NotImplementedException();
+        }
+    }
+}

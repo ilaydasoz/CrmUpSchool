@@ -1,0 +1,380 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/ilaydasozyilmaz/Projects/CrmUpSchoolUILayer/CrmUpSchool.UILayer/CrmUpSchool.UILayer.csproj": {}
+  },
+  "projects": {
+    "/Users/ilaydasozyilmaz/Projects/CrmUpSchoolUILayer/CrmUpSchool.BusinessLayer/CrmUpSchool.BusinessLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ilaydasozyilmaz/Projects/CrmUpSchoolUILayer/CrmUpSchool.BusinessLayer/CrmUpSchool.BusinessLayer.csproj",
+        "projectName": "CrmUpSchool.BusinessLayer",
+        "projectPath": "/Users/ilaydasozyilmaz/Projects/CrmUpSchoolUILayer/CrmUpSchool.BusinessLayer/CrmUpSchool.BusinessLayer.csproj",
+        "packagesPath": "/Users/ilaydasozyilmaz/.nuget/packages/",
+        "outputPath": "/Users/ilaydasozyilmaz/Projects/CrmUpSchoolUILayer/CrmUpSchool.BusinessLayer/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ilaydasozyilmaz/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/Users/ilaydasozyilmaz/Projects/CrmUpSchoolUILayer/CrmUpSchool.DataAccessLayer/CrmUpSchool.DataAccessLayer.csproj": {
+                "projectPath": "/Users/ilaydasozyilmaz/Projects/CrmUpSchoolUILayer/CrmUpSchool.DataAccessLayer/CrmUpSchool.DataAccessLayer.csproj"
+              },
+              "/Users/ilaydasozyilmaz/Projects/CrmUpSchoolUILayer/CrmUpSchool.EntityLayer/CrmUpSchool.EntityLayer.csproj": {
+                "projectPath": "/Users/ilaydasozyilmaz/Projects/CrmUpSchoolUILayer/CrmUpSchool.EntityLayer/CrmUpSchool.EntityLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.2.2, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/6.0.106/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/ilaydasozyilmaz/Projects/CrmUpSchoolUILayer/CrmUpSchool.DataAccessLayer/CrmUpSchool.DataAccessLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ilaydasozyilmaz/Projects/CrmUpSchoolUILayer/CrmUpSchool.DataAccessLayer/CrmUpSchool.DataAccessLayer.csproj",
+        "projectName": "CrmUpSchool.DataAccessLayer",
+        "projectPath": "/Users/ilaydasozyilmaz/Projects/CrmUpSchoolUILayer/CrmUpSchool.DataAccessLayer/CrmUpSchool.DataAccessLayer.csproj",
+        "packagesPath": "/Users/ilaydasozyilmaz/.nuget/packages/",
+        "outputPath": "/Users/ilaydasozyilmaz/Projects/CrmUpSchoolUILayer/CrmUpSchool.DataAccessLayer/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ilaydasozyilmaz/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/Users/ilaydasozyilmaz/Projects/CrmUpSchoolUILayer/CrmUpSchool.EntityLayer/CrmUpSchool.EntityLayer.csproj": {
+                "projectPath": "/Users/ilaydasozyilmaz/Projects/CrmUpSchoolUILayer/CrmUpSchool.EntityLayer/CrmUpSchool.EntityLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/6.0.106/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/ilaydasozyilmaz/Projects/CrmUpSchoolUILayer/CrmUpSchool.EntityLayer/CrmUpSchool.EntityLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ilaydasozyilmaz/Projects/CrmUpSchoolUILayer/CrmUpSchool.EntityLayer/CrmUpSchool.EntityLayer.csproj",
+        "projectName": "CrmUpSchool.EntityLayer",
+        "projectPath": "/Users/ilaydasozyilmaz/Projects/CrmUpSchoolUILayer/CrmUpSchool.EntityLayer/CrmUpSchool.EntityLayer.csproj",
+        "packagesPath": "/Users/ilaydasozyilmaz/.nuget/packages/",
+        "outputPath": "/Users/ilaydasozyilmaz/Projects/CrmUpSchoolUILayer/CrmUpSchool.EntityLayer/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ilaydasozyilmaz/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/6.0.106/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/ilaydasozyilmaz/Projects/CrmUpSchoolUILayer/CrmUpSchool.UILayer/CrmUpSchool.UILayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ilaydasozyilmaz/Projects/CrmUpSchoolUILayer/CrmUpSchool.UILayer/CrmUpSchool.UILayer.csproj",
+        "projectName": "CrmUpSchool.UILayer",
+        "projectPath": "/Users/ilaydasozyilmaz/Projects/CrmUpSchoolUILayer/CrmUpSchool.UILayer/CrmUpSchool.UILayer.csproj",
+        "packagesPath": "/Users/ilaydasozyilmaz/.nuget/packages/",
+        "outputPath": "/Users/ilaydasozyilmaz/Projects/CrmUpSchoolUILayer/CrmUpSchool.UILayer/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ilaydasozyilmaz/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/Users/ilaydasozyilmaz/Projects/CrmUpSchoolUILayer/CrmUpSchool.BusinessLayer/CrmUpSchool.BusinessLayer.csproj": {
+                "projectPath": "/Users/ilaydasozyilmaz/Projects/CrmUpSchoolUILayer/CrmUpSchool.BusinessLayer/CrmUpSchool.BusinessLayer.csproj"
+              },
+              "/Users/ilaydasozyilmaz/Projects/CrmUpSchoolUILayer/CrmUpSchool.DataAccessLayer/CrmUpSchool.DataAccessLayer.csproj": {
+                "projectPath": "/Users/ilaydasozyilmaz/Projects/CrmUpSchoolUILayer/CrmUpSchool.DataAccessLayer/CrmUpSchool.DataAccessLayer.csproj"
+              },
+              "/Users/ilaydasozyilmaz/Projects/CrmUpSchoolUILayer/CrmUpSchool.EntityLayer/CrmUpSchool.EntityLayer.csproj": {
+                "projectPath": "/Users/ilaydasozyilmaz/Projects/CrmUpSchoolUILayer/CrmUpSchool.EntityLayer/CrmUpSchool.EntityLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.2.2, )"
+            },
+            "MailKit": {
+              "target": "Package",
+              "version": "[3.4.2, )"
+            },
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
+            "MimeKit": {
+              "target": "Package",
+              "version": "[3.4.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/6.0.106/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

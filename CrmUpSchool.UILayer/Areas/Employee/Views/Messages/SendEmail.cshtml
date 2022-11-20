@@ -1,0 +1,19 @@
+﻿@model MailRequest
+@{
+    Layout = "_EmployeeLayout";
+}
+
+<h1>Send E-mail</h1>
+
+<form class="form-group" method="post">
+    <label>Receiver's E-mail</label>
+    <input type="text" asp-for="ReceiverEmail" class="form-control" />
+    <br />
+    <label>Subject</label>
+    <input type="text" asp-for="EmailSubject" class="form-control" />
+    <br />
+    <label>Message</label>
+    <textarea cols="3" rows="5" asp-for="EmailContent" class="form-control"></textarea>
+    <br />
+    <button class="btn btn-warning">Send</button>
+</form>

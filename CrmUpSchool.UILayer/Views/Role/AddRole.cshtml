@@ -1,0 +1,14 @@
+﻿@model RoleViewModel
+@{
+    ViewData["Title"] = "AddEmployee";
+    Layout = "_CrmLayout";
+}
+
+<h1>Role Adding Page</h1>
+<form method="post">
+    <label>Role Name</label>
+    <input type="text" asp-for="RoleName" class="form-control" />
+    <span class="text-danger" asp-validation-for="RoleName">
+    </span>
+    <button class="btn btn-warning">Add Role</button>
+</form>
