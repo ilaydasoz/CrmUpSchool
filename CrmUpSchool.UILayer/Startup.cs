@@ -2,11 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using CrmUpSchool.BusinessLayer.Abstract;
-using CrmUpSchool.BusinessLayer.Concrete;
-using CrmUpSchool.DataAccessLayer.Abstract;
+using CrmUpSchool.BusinessLayer.DIContainer;
 using CrmUpSchool.DataAccessLayer.Concrete;
-using CrmUpSchool.DataAccessLayer.EntityFramework;
 using CrmUpSchool.EntityLayer.Concrete;
 using CrmUpSchool.UILayer.Models;
 using Microsoft.AspNetCore.Authorization;
@@ -32,16 +29,8 @@ namespace CrmUpSchool.UILayer
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddScoped<ICategoryService, CategoryManager>();
-            services.AddScoped<ICategoryDal,EFCategoryDal >();
-            services.AddScoped<IEmployeeService, EmployeeManager>();
-            services.AddScoped<IEmployeeDal, EfEmployeeDal>();
-            services.AddScoped<IEmployeeTaskService, EmployeeTaskManager>();
-            services.AddScoped<IEmployeeTaskDal, EfEmployeeTaskDal>();
-            services.AddScoped<IEmployeeTaskDetailService, EmployeeTaskDetailManager>();
-            services.AddScoped<IEmployeeTaskDetailDal, EfEmployeeTaskDetailDal>();
-            services.AddScoped<IMessageService, MessageManager>();
-            services.AddScoped<IMessageDal, EfMessageDal>();
+            services.Containerdependencies();
+
             services.AddDbContext<Context>();
             services.AddIdentity<AppUser, AppRole>().AddErrorDescriber<CustomIdentityValidator>().AddEntityFrameworkStores<Context>();
             services.AddControllersWithViews();

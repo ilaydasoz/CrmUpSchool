@@ -51,6 +51,11 @@
     <None Remove="Views\Shared\Components\_FeatureDashboardPartial\" />
     <None Remove="Views\Shared\Components\_OverviewDashboardPartial                 \" />
     <None Remove="Areas\Employee\Views\Chart\" />
+    <None Remove="Views\Announcement\" />
+    <None Remove="EPPlus.Core" />
+    <None Remove="iTextSharp.LGPLv2.Core" />
+    <None Remove="ClosedXML" />
+    <None Remove="Areas\Employee\Views\Report\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="FluentValidation.AspNetCore" Version="11.2.2" />
@@ -66,6 +71,9 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
     <PackageReference Include="MimeKit" Version="3.4.2" />
     <PackageReference Include="MailKit" Version="3.4.2" />
+    <PackageReference Include="EPPlus.Core" Version="1.5.4" />
+    <PackageReference Include="iTextSharp.LGPLv2.Core" Version="1.9.3" />
+    <PackageReference Include="ClosedXML" Version="0.97.0" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CrmUpSchool.BusinessLayer\CrmUpSchool.BusinessLayer.csproj">
@@ -101,14 +109,18 @@
     <Folder Include="Views\Shared\Components\" />
     <Folder Include="Views\Shared\Components\_HeadDashboardPartial\" />
     <Folder Include="Areas\Employee\Views\EmployeeTaskArea\" />
-    <Folder Include="Areas\Employee\Views\Messages\" />
+    <Folder Include="Areas\Employee\Views\Message\" />
     <Folder Include="Areas\Employee\Views\EmployeeArea\" />
     <Folder Include="Areas\Employee\Views\Dashboard\" />
     <Folder Include="Views\Shared\Components\_FeatureDashboardPartial\" />
     <Folder Include="Views\Shared\Components\_OverviewDashboardPartial                 \" />
     <Folder Include="Areas\Employee\Views\Chart\" />
+    <Folder Include="Views\Announcement\" />
+    <Folder Include="Areas\Employee\Views\Report\" />
+    <Folder Include="wwwroot\PdfReports\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\UserImages\" />
+    <Content Remove="wwwroot\PdfReports\" />
   </ItemGroup>
 </Project>

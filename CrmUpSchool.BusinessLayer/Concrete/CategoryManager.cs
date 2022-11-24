@@ -15,8 +15,6 @@ namespace CrmUpSchool.BusinessLayer.Concrete
             _categoryDal = categoryDal;
         }
 
-
-
         public void TDelete(Category t)
         {
             _categoryDal.Delete(t);

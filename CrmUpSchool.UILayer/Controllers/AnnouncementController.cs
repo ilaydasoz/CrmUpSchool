@@ -1,10 +1,24 @@
 ﻿using System;
+using CrmUpSchool.BusinessLayer.Abstract;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+
 namespace CrmUpSchool.UILayer.Controllers
-{
-    public class AnnouncementController
+{ 
+    [AllowAnonymous]
+    public class AnnouncementController : Controller
     {
-        public AnnouncementController()
+        private readonly IAnnouncementService _announcementService;
+
+        public AnnouncementController(IAnnouncementService announcementService)
         {
+            _announcementService = announcementService;
+        }
+
+        public IActionResult Index()
+        {
+            var values = _announcementService.TGetList();
+            return View(values);
         }
     }
 }
