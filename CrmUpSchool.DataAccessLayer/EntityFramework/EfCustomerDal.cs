@@ -5,7 +5,7 @@ using CrmUpSchool.EntityLayer.Concrete;
 
 namespace CrmUpSchool.DataAccessLayer.EntityFramework
 {
-    public class EFCustomerDal : GenericRepository<Customer>, ICustomerDal
+    public class EfCustomerDal : GenericRepository<Customer>, ICustomerDal
     {
         
     }

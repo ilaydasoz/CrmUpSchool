@@ -8,7 +8,7 @@ namespace CrmUpSchool.BusinessLayer.Concrete
 {
     public class EmployeeManager : IEmployeeService
     {
-        IEmployeeDal _employeeDal;
+        private readonly IEmployeeDal _employeeDal;
 
         public EmployeeManager(IEmployeeDal employeeDal)
         {
