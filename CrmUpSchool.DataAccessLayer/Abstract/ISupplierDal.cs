@@ -1,7 +1,10 @@
 ﻿using System;
+using CrmUpSchool.EntityLayer.Concrete;
+
 namespace CrmUpSchool.DataAccessLayer.Abstract
 {
-    public interface ISupplierDal
+    public interface ISupplierDal : IGenericDal<Supplier>
     {
+
     }
 }

@@ -61,6 +61,7 @@
     <None Remove="Areas\Admin\Models\" />
     <None Remove="Areas\Admin\Data\" />
     <None Remove="Areas\Admin\Views\" />
+    <None Remove="Views\Alert\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="FluentValidation.AspNetCore" Version="11.2.2" />
@@ -128,6 +129,7 @@
     <Folder Include="Areas\Admin\Models\" />
     <Folder Include="Areas\Admin\Data\" />
     <Folder Include="Areas\Admin\Views\" />
+    <Folder Include="Views\Alert\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\UserImages\" />

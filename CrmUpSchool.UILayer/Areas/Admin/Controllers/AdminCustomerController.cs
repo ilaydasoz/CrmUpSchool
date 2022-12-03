@@ -47,5 +47,12 @@ namespace CrmUpSchool.UILayer.Areas.Admin.Controllers
             var jsonValues = JsonConvert.SerializeObject(values);
             return Json(jsonValues);
         }
+
+        public IActionResult DeleteCustomer(int id)
+        {
+            var values = _customerService.TGetById(id);
+            _customerService.TDelete(values);
+            return Json(values);
+        }
     }
 }

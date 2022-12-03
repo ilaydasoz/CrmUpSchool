@@ -1,39 +1,28 @@
 ﻿<Properties StartupConfiguration="{303C2F2E-9EB1-445C-8F99-F17E932A23A0}|Default">
   <MonoDevelop.Ide.ItemProperties.CrmUpSchool.UILayer PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="CrmUpSchool.UILayer/Areas/Admin/Views/Index.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CrmUpSchool.UILayer/Views/Alert/Index.cshtml">
     <Files>
-      <File FileName="CrmUpSchool.UILayer/Areas/Admin/Views/Index.cshtml" Line="15" Column="7" />
-      <File FileName="CrmUpSchool.BusinessLayer/DIContainer/Extensions.cs" Line="23" Column="30" />
-      <File FileName="CrmUpSchool.DataAccessLayer/EntityFramework/EfCustomerDal.cs" Line="8" Column="20" />
-      <File FileName="CrmUpSchool.UILayer/Areas/Admin/Controllers/AdminCustomerController.cs" Line="49" Column="10" />
+      <File FileName="CrmUpSchool.UILayer/Areas/Admin/Views/Index.cshtml" Line="144" Column="8" />
+      <File FileName="CrmUpSchool.UILayer/Areas/Admin/Controllers/AlertController.cs" Line="21" Column="1" />
+      <File FileName="CrmUpSchool.EntityLayer/Concrete/Supplier.cs" Line="14" Column="1" />
+      <File FileName="CrmUpSchool.DataAccessLayer/EntityFramework/EfSupplierDal.cs" Line="12" Column="2" />
+      <File FileName="CrmUpSchool.DataAccessLayer/Abstract/ISupplierDal.cs" Line="11" Column="1" />
+      <File FileName="CrmUpSchool.DataAccessLayer/Concrete/Context.cs" Line="14" Column="1" />
+      <File FileName="CrmUpSchool.UILayer/Areas/Admin/Controllers/AdminCustomerController.cs" Line="1" Column="1" />
+      <File FileName="CrmUpSchool.UILayer/Views/Alert/Index.cshtml" Line="19" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="CrmUpSchool.UILayer" expanded="True">
-            <Node name="CrmUpSchool.BusinessLayer" expanded="True">
-              <Node name="DIContainer" expanded="True" />
-            </Node>
-            <Node name="CrmUpSchool.DataAccessLayer" expanded="True">
-              <Node name="EntityFramework" expanded="True" />
-            </Node>
-            <Node name="CrmUpSchool.UILayer" expanded="True">
-              <Node name="Areas" expanded="True">
-                <Node name="Admin" expanded="True">
-                  <Node name="Controllers" expanded="True" />
-                  <Node name="Views" expanded="True">
-                    <Node name="Index.cshtml" selected="True" />
-                  </Node>
-                </Node>
-              </Node>
-              <Node name="Views" expanded="True" />
-            </Node>
+            <Node name="CrmUpSchool.DTOLayer" selected="True" />
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.CrmUpSchool.DTOLayer FirstBuild="True" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
